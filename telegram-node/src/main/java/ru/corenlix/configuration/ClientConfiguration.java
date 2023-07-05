@@ -2,20 +2,14 @@ package ru.corenlix.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.reactive.function.client.WebClient;
-import org.springframework.web.reactive.function.client.support.WebClientAdapter;
-import org.springframework.web.service.invoker.HttpServiceProxyFactory;
+import org.springframework.web.client.RestTemplate;
 import ru.corenlix.client.LatexClient;
+import ru.corenlix.client.LatexClientImpl;
 
 @Configuration
 public class ClientConfiguration {
     @Bean
     LatexClient latexClient(ApplicationConfig applicationConfig) {
-        WebClient client = WebClient.builder()
-                .baseUrl(applicationConfig.getLatex().getPath())
-                .build();
-
-        HttpServiceProxyFactory factory = HttpServiceProxyFactory.builder(WebClientAdapter.forClient(client)).build();
-        return factory.createClient(LatexClient.class);
+        return new LatexClientImpl(applicationConfig.getLatex().getPath(), new RestTemplate());
     }
 }

@@ -1,4 +1,4 @@
-package ru.corenlix.service.producer;
+package ru.corenlix.producer;
 
 import ru.corenlix.dto.AnswerDto;
 

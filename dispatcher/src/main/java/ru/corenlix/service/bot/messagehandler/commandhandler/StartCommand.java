@@ -16,6 +16,6 @@ public class StartCommand implements Command {
 
     @Override
     public String process(Long telegramId) {
-        return "Hello! Use /help to get commands list";
+        return "Hello! Use /help to get commands list. Send photo to get latex code.";
     }
 }

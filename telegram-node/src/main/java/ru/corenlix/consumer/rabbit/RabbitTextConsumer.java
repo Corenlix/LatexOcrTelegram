@@ -1,13 +1,13 @@
-package ru.corenlix.service.consumer.rabbit;
+package ru.corenlix.consumer.rabbit;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
+import ru.corenlix.producer.AnswerProducer;
 import ru.corenlix.dto.AnswerDto;
 import ru.corenlix.dto.TextDto;
-import ru.corenlix.service.consumer.TextConsumer;
-import ru.corenlix.service.producer.AnswerProducer;
+import ru.corenlix.consumer.TextConsumer;
 
 @Service
 @Slf4j

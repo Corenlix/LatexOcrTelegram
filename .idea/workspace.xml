@@ -4,8 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655546cd-76ca-4582-a6e5-01dd49b3f355" name="Changes" comment="remove postgres">
+    <list default="true" id="655546cd-76ca-4582-a6e5-01dd49b3f355" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/client/LatexClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/consumer/rabbit/RabbitPhotoConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/dto/LatexResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/src/main/java/ru/corenlix/service/bot/messagehandler/commandhandler/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/src/main/java/ru/corenlix/service/bot/messagehandler/commandhandler/StartCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/client/LatexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/client/LatexClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/configuration/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/configuration/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/configuration/ClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/configuration/ClientConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/dto/LatexAnswerDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/service/consumer/PhotoConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/consumer/PhotoConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/service/consumer/TextConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/consumer/TextConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/service/consumer/rabbit/RabbitPhotoConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/service/consumer/rabbit/RabbitTextConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/consumer/rabbit/RabbitTextConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/service/producer/AnswerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/producer/AnswerProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/service/producer/rabbit/RabbitAnswerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-node/src/main/java/ru/corenlix/producer/rabbit/RabbitAnswerProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +59,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/corenlix/IdeaProjects/LatexOcrTelegram",
@@ -50,10 +68,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "41d30a5095ec7b96c968549b403b1678",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="cd ./dispatcher &amp; spring-boot:run" />
@@ -103,6 +125,8 @@
     </configuration>
     <configuration name="NodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
+        <env name="TG_BOT_NAME" value="corenlix_fs_bot" />
+        <env name="TG_BOT_TOKEN" value="6238743291:AAFY1Tdb7rwxHtzWEVpwo3_3MBqhLdor72Y" />
         <env name="RABBITMQ_USERNAME" value="rmuser" />
         <env name="RABBITMQ_PASSWORD" value="rmpassword" />
       </envs>
@@ -179,7 +203,7 @@
       <workItem from="1688491604595" duration="3577000" />
       <workItem from="1688495410705" duration="130000" />
       <workItem from="1688495592960" duration="198000" />
-      <workItem from="1688497131242" duration="326000" />
+      <workItem from="1688497131242" duration="13801000" />
     </task>
     <task id="LOCAL-00001" summary="remove postgres">
       <option name="closed" value="true" />
@@ -189,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688496250658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1688497739073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688497739073</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +239,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="remove postgres" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove postgres" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>

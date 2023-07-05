@@ -1,4 +1,4 @@
-package ru.corenlix.service.consumer;
+package ru.corenlix.consumer;
 
 import ru.corenlix.dto.PhotoDto;
 

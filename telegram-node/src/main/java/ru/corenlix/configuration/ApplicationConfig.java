@@ -7,6 +7,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.validation.annotation.Validated;
 
+import java.net.URI;
+
 @Validated
 @Data
 @Configuration
@@ -45,7 +47,7 @@ public class ApplicationConfig {
     @Validated
     @Data
     public static class Latex {
-        @NotBlank
-        private final String path;
+        @NonNull
+        private final URI path;
     }
 }

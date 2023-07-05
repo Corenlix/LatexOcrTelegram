@@ -1,10 +1,10 @@
-package ru.corenlix.service.producer.rabbit;
+package ru.corenlix.producer.rabbit;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
+import ru.corenlix.producer.AnswerProducer;
 import ru.corenlix.configuration.ApplicationConfig;
 import ru.corenlix.dto.AnswerDto;
-import ru.corenlix.service.producer.AnswerProducer;
 
 @Service
 public class RabbitAnswerProducer implements AnswerProducer {
